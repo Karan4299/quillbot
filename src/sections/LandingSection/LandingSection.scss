@@ -10,6 +10,7 @@
     .grammarly-landing-page-inner-container {
         height: fit-content;
         box-sizing: border-box;
+        -ms-box-sizing: border-box; 
         width: 151.2rem;
         @include flexify(column, flex-start, center);
         padding-top: 3.2rem;
@@ -36,18 +37,19 @@
         .grammarly-landing-page-inner-container {
             height: fit-content;
             box-sizing: border-box;
+            -ms-box-sizing: border-box; 
             max-width: 33.5rem;
             min-width: 33.5rem;
             width: 33.52rem;
             min-height: 206.1rem;
             @include flexify(column, flex-start, center);
             padding-top: 3.2rem;
-            box-sizing: border-box;
     
             .grammarly-landing-page-header-text-container {
                 font-size: 3rem;
                 line-height: 4rem;
                 font-family: $fontInter700;
+                width: 100%;
                 letter-spacing: -.0025rem;
                 text-align: center;
             }

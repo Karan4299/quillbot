@@ -5,6 +5,7 @@ html {
   font-size: 10px;
   overflow-x: hidden;
   box-sizing: border-box !important;
+  -ms-box-sizing: border-box !important; 
   // font-family: ;
   @include devices(maxWidth) {
       font-size: pxToVw(10) !important;

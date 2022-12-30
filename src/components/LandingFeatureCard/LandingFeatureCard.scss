@@ -68,6 +68,7 @@
             @include devices(mobile) {
                 &.svgcontainer {
                     height: fit-content;
+                    min-height: 25.7rem;
                     width: 35.8rem;
     
                     img {

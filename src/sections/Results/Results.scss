@@ -4,6 +4,7 @@
     height: fit-content;
     @include flexify(row, center, flex-start);
     box-sizing: border-box;
+    -ms-box-sizing: border-box; 
 
     .grammarly-result-section-inner-container {
         width: 108rem;
@@ -11,6 +12,7 @@
         @include flexify(column, flex-start, flex-start);
         padding: 6.4rem 0rem 10.4rem;
         box-sizing: border-box;
+        -ms-box-sizing: border-box; 
 
         .grammarly-result-section-head-text-container {
 
@@ -43,6 +45,7 @@
     }
 
     @include devices(mobile) {
+        min-height: 115.4rem; 
         @include flexify(row, center, flex-start);
         .grammarly-result-section-inner-container {
             width: 35.8rem;
@@ -50,6 +53,7 @@
             @include flexify(column, flex-start, flex-start);
             padding: 6.4rem 1.6rem 0rem;
             box-sizing: border-box;
+            -ms-box-sizing: border-box; 
     
             .grammarly-result-section-head-text-container {
     
@@ -62,6 +66,9 @@
                         font-size: 2.4rem;
                         letter-spacing: -.0025rem;
                         line-height: 3.2rem;
+                        min-width: 80%;
+                        max-width: 80%;
+                        word-wrap: break-word;
                     }
     
                     &.subtitle {

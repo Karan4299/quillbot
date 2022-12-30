@@ -14,8 +14,6 @@ const PlanCard = (prop) => {
         },
         features= []
     } = prop.props
-
-    console.log(prop.props, "--")
     return (
         <div className="grammarly-plan-card-main-container">
             <div className="grammarly-plan-card-inner-container">
@@ -28,7 +26,6 @@ const PlanCard = (prop) => {
                 <div className="grammarly-plan-card-item-container features">
                     {
                         features.data.map((feature, index) => {
-                            console.log(features.emphasise.includes(index))
                             return <Feature feature={feature} className={`${features.emphasise.includes(index) ? "emphasise" : ""}`} />
                         })
                     }

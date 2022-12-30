@@ -16,8 +16,8 @@ const Header = () => {
                 </div>
                 <div className="grammarly-header-navigator-container">
                     <div className="grammarly-header-navigator-list-container"></div>
-                    <div className="grammarly-header-navigator-log-in-container">
-                        Log in
+                    <div className="grammarly-header-navigator-log-in-container" >
+                        <a href="https://www.grammarly.com/signin">Log in</a>
                     </div>
                 </div>
             </div>

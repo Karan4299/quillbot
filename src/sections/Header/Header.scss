@@ -27,6 +27,13 @@
         .grammarly-header-navigator-container {
             font-size: 1.45rem;
             font-family: $fontInter600;
+            cursor: pointer;
+
+            a{
+                text-decoration: none;
+                color: #161719;
+                font-family: $fontInter700;
+            }
         }
     }
 

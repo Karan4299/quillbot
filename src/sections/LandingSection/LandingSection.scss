@@ -36,7 +36,10 @@
         .grammarly-landing-page-inner-container {
             height: fit-content;
             box-sizing: border-box;
+            max-width: 33.5rem;
+            min-width: 33.5rem;
             width: 33.52rem;
+            min-height: 206.1rem;
             @include flexify(column, flex-start, center);
             padding-top: 3.2rem;
             box-sizing: border-box;

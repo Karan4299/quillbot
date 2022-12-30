@@ -1,6 +1,7 @@
 {
   "name": "quillbottask",
   "version": "0.1.0",
+  "homepage": "http://Karan4299.github.io/quillbot",
   "private": true,
   "dependencies": {
     "@craco/craco": "^5.2.2",

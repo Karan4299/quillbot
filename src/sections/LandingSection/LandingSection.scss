@@ -1,0 +1,63 @@
+.grammarly-landing-page-main-container {
+    width: 100%;
+    height: fit-content;
+    @include flexify(row, center, center);
+    // background: no-repeat url(https://static.grammarly.com/assets/files/06666c30f97cce25ac1cf1c4573332c2/swoosh.png);
+    // background-position: left -15rem top -7rem;
+    // background-size: 93rem 93rem;
+
+
+    .grammarly-landing-page-inner-container {
+        height: fit-content;
+        box-sizing: border-box;
+        width: 151.2rem;
+        @include flexify(column, flex-start, center);
+        padding-top: 3.2rem;
+
+        .grammarly-landing-page-header-text-container {
+            font-size: 4.2rem;
+            line-height: 5.2rem;
+            font-family: $fontInter700;
+        }
+
+        .grammarly-landing-page-button-container {
+            margin-top: 2.4rem;
+            width: 28.4rem;
+            height: 4.8rem;
+        }
+
+        .grammarly-landing-page-landing-features-main-container {
+            @include flexify(column, center, center);
+            margin-top: 7.6rem;
+        }
+    }
+
+    @include devices(mobile) {
+        .grammarly-landing-page-inner-container {
+            height: fit-content;
+            box-sizing: border-box;
+            width: 33.52rem;
+            @include flexify(column, flex-start, center);
+            padding-top: 3.2rem;
+            box-sizing: border-box;
+    
+            .grammarly-landing-page-header-text-container {
+                font-size: 3rem;
+                line-height: 4rem;
+                font-family: $fontInter700;
+                letter-spacing: -.0025rem;
+                text-align: center;
+            }
+    
+            .grammarly-landing-page-button-container {
+                margin-top: 2.6rem;
+                width: 28.4rem;
+                height: 4.8rem;
+            }
+    
+            .grammarly-landing-page-landing-features-main-container {
+                @include flexify(column, flex-start, center);
+            }
+        }
+    }
+}

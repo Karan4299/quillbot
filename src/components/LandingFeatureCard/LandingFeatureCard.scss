@@ -1,0 +1,108 @@
+.grammarly-landing-features-main-container {
+    height: 51.6rem;
+    width: 108rem;
+    // margin-top: 3.2rem;
+
+    @include devices(mobile) {
+        height: fit-content;
+    }
+
+    .grammarly-landing-fetures-inner-container {
+        width: 100%;
+        height: 100%;
+
+        &.forward {
+            @include flexify(row, center, center);
+        }
+
+        &.reverse {
+            @include flexify(row-reverse, center, center);
+        }
+
+        @include devices(mobile) {
+            &.forward {
+                @include flexify(column, space-between, center);
+            }
+    
+            &.reverse {
+                @include flexify(column, center, center);
+            }
+        }
+
+        .grammarly-landing-features-item-container {
+            
+            &.svgcontainer {
+                width: 64.8rem;
+
+                img {
+                    width: 100% !important;
+                    overflow: hidden;
+                }
+            }
+
+            &.text-container {
+                width: 43.2rem;
+                height: 100%;
+                @include flexify(column,center, center);
+                
+                .grammarly-landing-features-item-text-container {
+                    width: 34.55rem;
+
+                    &.title {
+                        color: #0E101A;
+                        font-family: $fontInter700;
+                        font-size: 2.9rem;
+                        letter-spacing: 0.003rem;
+                        line-height: 3.8rem;
+                    }
+
+                    &.subtitle {
+                        color: #0E101A;
+                        font-size: 2rem;
+                        line-height: 3.2rem;
+                        font-family: $fontInter400;
+                    }
+                }
+            }
+
+            @include devices(mobile) {
+                &.svgcontainer {
+                    height: fit-content;
+                    width: 35.8rem;
+    
+                    img {
+                        width: 100% !important;
+                        overflow: hidden;
+                    }
+                }
+    
+                &.text-container {
+                    width: 43.2rem;
+                    height: 16rem;
+                    margin-top: 1.5rem;
+                    text-align: center;
+                    @include flexify(column,center, center);
+                    
+                    .grammarly-landing-features-item-text-container {
+                        width: 34.55rem;
+    
+                        &.title {
+                            color: rgb(14, 16, 26);
+                            font-size: 2.4rem;
+                            letter-spacing: -0.0025rem;
+                            line-height: 3.2rem;
+                        }
+    
+                        &.subtitle {
+                            width: 28.6rem;
+                            color: rgb(14, 16, 26);
+                            font-size: 1.9rem;
+                            line-height: 3.2rem;
+                            font-family: $fontInter400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+// @import "../../styles/mixins";
+
+.grammarly-header-main-container {
+    height: 6.4rem;
+    width: 100%;
+    @include flexify(row, center, center);
+    border-bottom: 0.1rem solid #CDD1DC;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+
+    .grammarly-header-inner-container {
+        width: 140.5rem;
+        @include flexify(row, space-between, center);
+
+        .grammarly-header-logo-container {
+            width: fit-content;
+            width: 12rem;
+            font-family: $fontInter700;
+            
+            img {
+                width: 100%;
+            }
+        }
+
+        .grammarly-header-navigator-container {
+            font-size: 1.45rem;
+            font-family: $fontInter600;
+        }
+    }
+
+    @include devices(mobile) {
+        height: 6.4rem;
+        padding: 0rem 2.1rem;
+        box-sizing: border-box;
+
+        .grammarly-header-inner-container {
+    
+            .grammarly-header-logo-container {
+                width: 10rem;
+                font-family: $fontInter700;
+                
+                img {
+                    width: 100%;
+                }
+            }
+    
+            .grammarly-header-navigator-container {
+                font-size: 1.45rem;
+                font-family: $fontInter600;
+            }
+        }
+    }
+}

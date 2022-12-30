@@ -1,0 +1,94 @@
+.grammarly-feature-main-container {
+    width: 100%;
+
+    @include flexify(column, flex-start, center);
+
+
+    .grammarly-feature-inner-container {
+        width: 151.2rem;
+        height: 58.2rem;
+
+        @include flexify(column, flex-start, center);
+
+        .grammarly-feature-text-container {
+            text-align: center;
+
+            .grammarly-feature-text-item {
+                &.title {
+                    font-size: 2.9rem;
+                    color: #0E101A;
+                    font-family: $fontInter700;
+                }
+
+                &.subtext {
+                    margin-top: 0.7rem;
+                    font-size: 1.8rem;
+                    line-height: 3.2rem;
+                    color: #0E101A;
+                    font-family: $fontInter400;
+                }
+            }
+        }
+
+        .grammarly-feature-plans-container {
+            width: 67.4rem;
+            // max-height: 42.6rem;
+            margin-top: 4.2rem;
+
+            
+
+            @include flexify(row, space-between, flex-start);
+
+            .grammarly-feature-plans-item-container {
+                width: 33.7rem;
+                padding: 0rem 3.2rem;
+            }
+        }
+
+        @include devices(mobile) {
+            width: 32.6rem;
+            height: fit-content;
+
+            .grammarly-feature-text-container {
+                text-align: left;
+    
+                .grammarly-feature-text-item {
+                    &.title {
+                        font-size: 2.4rem;
+                        color: rgb(14, 16, 26);
+                        letter-spacing: -.0025rem;
+                        font-family: $fontInter700;
+                        line-height: 3.2rem;
+                    }
+    
+                    &.subtext {
+                        margin-top: 0.7rem;
+                        font-size: 1.8rem;
+                        text-align: center;
+                        line-height: 2.8rem;
+                        color: rgb(14, 16, 26);
+                        font-family: $fontInter400;
+                    }
+                }
+            }
+    
+            .grammarly-feature-plans-container {
+                width: 33rem;
+                // max-height: 42.6rem;
+                margin-top: 4.2rem;
+    
+                
+    
+                @include flexify(column, flex-start, flex-start);
+    
+                .grammarly-feature-plans-item-container {
+                        width: 33rem;
+                        box-sizing: border-box;
+                        padding: 0rem 0rem;
+                }
+            }
+        }
+    }
+
+
+}

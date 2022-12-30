@@ -1,0 +1,38 @@
+.grammarly-feature-item-main-container {
+    width: fit-content;
+    height: 3rem;
+    max-width: 27.3;
+    word-wrap: break-word;
+
+    .grammarly-feature-item-inner-container {
+        width: 100%;
+        height: 100%;
+        @include flexify(row, flex-start, flex-start);
+
+        .grammarly-feature-item-tick-svg-container {
+            background: no-repeat url("https://static.grammarly.com/assets/files/3252614f5e974a46c75e9035de53011b/checkmark.svg");
+            width: 1.6rem;
+            height: 1.95rem;
+            background-position: center;
+        }
+
+        .grammarly-feature-item-text-container {
+            color: #0E101A;
+            font-size: 1.4rem;
+            line-height: 2rem;
+            cursor: pointer;
+            font-family: $fontInter400;
+            margin-left: 0.3rem;
+            border-bottom: 0.15rem dotted #9EA6BF;
+        }
+    }
+
+    &.emphasise {
+        .grammarly-feature-item-inner-container {
+            .grammarly-feature-item-text-container {
+                font-family: $fontInter600;
+                cursor: auto;
+            }
+        }
+    }
+}

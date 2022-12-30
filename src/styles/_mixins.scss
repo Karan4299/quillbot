@@ -1,0 +1,21 @@
+@mixin flexify($flex-direction: row, $justify-content: flex-start, $align-items: flex-start) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin devices ($breakpoint) { //the name of the mixin is devices
+
+@if $breakpoint == maxWidth {    
+    @media screen and (max-width: 1700px) {
+        @content;
+    }
+}
+
+@if $breakpoint == mobile {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+}

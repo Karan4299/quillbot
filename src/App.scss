@@ -1,0 +1,22 @@
+@import "./styles/functions";
+@import "./styles/mixins";
+
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+  box-sizing: border-box !important;
+  // font-family: ;
+  @include devices(maxWidth) {
+      font-size: pxToVw(10) !important;
+  }
+
+  @include devices(mobile) {
+      font-size: pxToVw(38.78) !important;
+  }
+}
+
+.grammarly-app-main-container {
+  width: 100vw;
+  overflow-x: hidden;
+  height: fit-content;
+}

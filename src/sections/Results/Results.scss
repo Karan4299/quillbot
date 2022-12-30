@@ -1,0 +1,87 @@
+.grammarly-result-section-main-container {
+    width: 100%;
+    background-color: #F9FAFF;
+    height: fit-content;
+    @include flexify(row, center, flex-start);
+    box-sizing: border-box;
+
+    .grammarly-result-section-inner-container {
+        width: 108rem;
+        height: 55.2rem;
+        @include flexify(column, flex-start, flex-start);
+        padding: 6.4rem 0rem 10.4rem;
+        box-sizing: border-box;
+
+        .grammarly-result-section-head-text-container {
+
+
+            .grammarly-result-section-text-item {
+
+                &.title {
+                    font-family: $fontInter700;
+                    font-size: 2.7rem;
+                    letter-spacing: -.05rem;
+                    line-height: 3.8rem;
+                }
+
+                &.subtitle {
+                    margin-top: 1.6rem;
+                    font-size: 1.8rem;
+                    line-height: 3.2rem;
+                    font-family: $fontInter400;
+                    color: #0E101A;
+                }
+            }
+        }
+
+        .grammarly-result-section-result-group-container {
+            margin-top: 7.2rem;
+            width: 100%;
+            @include flexify(row, space-between, center)
+        }
+        
+    }
+
+    @include devices(mobile) {
+        @include flexify(row, center, flex-start);
+        .grammarly-result-section-inner-container {
+            width: 35.8rem;
+            height: fit-content;
+            @include flexify(column, flex-start, flex-start);
+            padding: 6.4rem 1.6rem 0rem;
+            box-sizing: border-box;
+    
+            .grammarly-result-section-head-text-container {
+    
+    
+                .grammarly-result-section-text-item {
+    
+                    &.title {
+                        color: #0E101A;
+                        font-family: $fontInter700;
+                        font-size: 2.4rem;
+                        letter-spacing: -.0025rem;
+                        line-height: 3.2rem;
+                    }
+    
+                    &.subtitle {
+                        margin-top: 1.6rem;
+                        font-size: 1.6rem;
+                        line-height: 2.6rem;
+                        font-family: $fontInter400;
+                        color: #0E101A;
+                        text-align: left;
+                    }
+                }
+            }
+    
+            .grammarly-result-section-result-group-container {
+                margin-top: 0rem;
+                margin-bottom: 10rem;
+                width: 100%;
+                @include flexify(column, space-between, center)
+            }
+            
+        }
+    } 
+}

@@ -1,0 +1,4 @@
+@function pxToVw($valueInPx) {
+    $result: calc(100 * $valueInPx / 1512);
+    @return $result + vw;
+}

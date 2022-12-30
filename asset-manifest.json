@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/quillbot/static/css/main.c6da1c61.css",
-    "main.js": "/quillbot/static/js/main.f639d6c0.js",
+    "main.js": "/quillbot/static/js/main.15842bfc.js",
     "static/js/787.043abdfe.chunk.js": "/quillbot/static/js/787.043abdfe.chunk.js",
     "static/media/gramarly-logo.svg": "/quillbot/static/media/gramarly-logo.4ff60af7d873193e47df63f71581defa.svg",
     "index.html": "/quillbot/index.html",
     "main.c6da1c61.css.map": "/quillbot/static/css/main.c6da1c61.css.map",
-    "main.f639d6c0.js.map": "/quillbot/static/js/main.f639d6c0.js.map",
+    "main.15842bfc.js.map": "/quillbot/static/js/main.15842bfc.js.map",
     "787.043abdfe.chunk.js.map": "/quillbot/static/js/787.043abdfe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c6da1c61.css",
-    "static/js/main.f639d6c0.js"
+    "static/js/main.15842bfc.js"
   ]
 }

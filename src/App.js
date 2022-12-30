@@ -1,3 +1,4 @@
+import React from 'react';
 import { LandingSection, Header, FeaturesComparison, Results } from 'sections';
 import './App.scss';
 
